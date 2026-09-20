@@ -2,7 +2,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Runtime.Versioning;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
-using Presistence;
+using Persistence;
 
 namespace API.Controllers;
 
