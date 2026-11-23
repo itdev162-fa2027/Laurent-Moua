@@ -43,15 +43,15 @@ public class WeatherForecastController : ControllerBase
     {
         Console.WriteLine($"Data path: {_context.DbPath}");
         Console.WriteLine("Insert a new WeatherForecast");
-        
+
         var forecast = new WeatherForecast()
         {
             Date = new DateOnly(),
             TemperatureC = 75,
             Summary = "Warm"
         };
-        
-        _context.WeatherForecasts.Add(forecast);
+
+        //_context.WeatherForecasts.Add(forecast);
         var success = _context.SaveChanges() > 0;
 
         if (success)
